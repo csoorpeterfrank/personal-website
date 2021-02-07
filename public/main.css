@@ -1,0 +1,195 @@
+:root {
+  --mainColor: #39FF14;
+  --theme-color-rgb: rgb(57, 255, 20);
+}
+
+body{
+    background: #000;
+    font-family: 'Consolas';
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #39FF14;
+    margin: 40px 0;
+}
+nav {
+    position: relative;
+    background: #888;
+    box-shadow: 10px 10px #39FF14;
+    transition: 150ms ease-out;
+    width: 250px;
+    margin: 15px;
+}
+nav:hover {
+    box-shadow: 16px 16px #39FF14;
+}
+nav ul{
+    margin: 0;
+    padding: 20px;
+}
+nav ul li {
+    list-style: none;
+    padding: 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .4s;
+    font-weight: bold;
+}
+nav ul li a:hover {
+  background-size: 4px 50px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+p {
+    color: #ccc;
+    font-size: 17px;
+}
+#profilepic{
+    border-radius: 50%;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+#activity {
+    clear: both;
+}
+
+codersrank-summary {
+  --bg-color: transparent;
+  --badge-bg-color: #161616;
+  --badge-text-color: #fff;
+  --badges-padding: 0px;
+  --badge-padding: 8px;
+  --badge-margin: 16px;
+  --badge-border-radius: 8px;
+  --badge-rank-font-size: 16px;
+  --badge-technology-font-size: 18px;
+  --badge-location-font-size: 16px;
+  --badge-icon-size: 32px;
+  --badge-border: 1px solid rgba(0, 0, 0, 0.1);
+  --badge-box-shadow: none;
+}
+.badges {
+    padding: 10px 0 20px 0;
+}
+.badges a {
+    background: #191919;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 2px 8px 6px 8px;
+    color: var(--mainColor)!important;
+    text-decoration: none;
+}
+.badge {
+    display: block;
+}
+.badge svg {
+    float: left;
+    fill: var(--mainColor);
+    transition: 150ms;
+}
+.badge:hover svg {
+    fill: #2cb314;
+}
+
+.badge:hover strong {
+    color: #2cb314;
+}
+
+.badge img {
+
+}
+.badges ul {
+    margin: 0;
+    padding: 0;
+}
+.badges ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.badge strong {
+    vertical-align: middle;
+    margin: 3px 0 0 8px;
+    transition: 150ms;
+}
+
+codersrank-activity {
+  padding: 5px;
+  border-radius: 8px;
+  background: #161616;
+  --bg-color-0: #111;
+  --bg-color-1: rgba(57, 255, 20, 0.25);
+  --bg-color-2: rgba(57, 255, 20, 0.5);
+  --bg-color-3: rgba(57, 255, 20, 0.75);
+  --bg-color-4: rgba(57, 255, 20, 1);
+  --label-text-color: rgba(255, 255, 255, 0.54);
+}
+
+codersrank-skills-chart {
+    padding-top: 30px;
+  --label-text-color: rgba(255, 255, 255, 0.54);
+  --chart-bg-color: #161616;
+  --chart-border-radius: 8px;
+  --axis-bg-color: transparent;
+  --label-font-size: 12px;
+}
+
+codersrank-education {
+    color: #ccc;
+  --item-bg-color: #161616;
+  --item-border-radius: 8px;
+  --item-spacing: 16px;
+  --item-padding: 16px;
+  --logo-size: 64px;
+  --tag-bg-color: rgba(255,255,255,0.075);
+}
+
+#contact table td,a {
+    color: #ccc;
+    font-size: 17px;
+}
+
+footer {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 654px) {
+  .badges {
+      clear: both;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+    .badge {
+    }
+  .badges ul li {
+      display: block;
+      width: 160px;
+      margin: 10px;
+  }
+}
